@@ -1,4 +1,4 @@
-export const APP_VERSION = '1.0.2';
+export const APP_VERSION = '1.0.5';
 
 // Link Web App của Google Apps Script (Bạn sẽ thay link của bạn vào đây)
 export const GOOGLE_SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbzzV2mVtlKhrHZ32FJYoh_KMw19eksabOuNy0I-Ck4in8ylGG0Qi2rw5FEWOBRF_Lfr/exec';

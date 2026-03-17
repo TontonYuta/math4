@@ -1,4 +1,4 @@
-package com.tontonyuta.math6;
+package com.tontonyuta.math4;
 
 import com.getcapacitor.BridgeActivity;
 

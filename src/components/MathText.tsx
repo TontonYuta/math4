@@ -10,16 +10,14 @@ interface MathTextProps {
 
 export const MathText: React.FC<MathTextProps> = ({ content, className }) => {
   return (
-    <div
-      className={`math-text overflow-x-auto overflow-y-visible antialiased ${className || ''}`}
-    >
+    <div className={`math-text overflow-x-auto overflow-y-visible antialiased ${className || ''}`}>
       <ReactMarkdown
         remarkPlugins={[remarkMath]}
         rehypePlugins={[rehypeKatex]}
         components={{
           p: ({ node, ...props }) => (
-            <div
-              className="text-slate-800 dark:text-slate-100 leading-7 text-[clamp(15px,4vw,18px)] break-words overflow-visible"
+            <p
+              className="m-0 text-slate-800 dark:text-slate-100 leading-7 text-[clamp(15px,4vw,18px)] break-words overflow-visible"
               {...props}
             />
           ),

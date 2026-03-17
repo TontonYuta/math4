@@ -101,7 +101,7 @@ export default function App() {
         setUpdateProgressText('Đang kết nối máy chủ...');
 
         const downloadUrl =
-          updateUrl || `https://github.com/TontonYuta/math6/releases/download/v${newVersion}/update.zip`;
+          updateUrl || `https://github.com/TontonYuta/math4/releases/download/v${newVersion}/update.zip`;
 
         setUpdateProgressText('Đang tải bản cập nhật...');
 

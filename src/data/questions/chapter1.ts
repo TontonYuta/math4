@@ -4,412 +4,195 @@ import { chapter1ExamTopics } from './chapter1-exams';
 export const chapter1CoreTopics: Topic[] = [
   {
     id: 'c1-t1',
-    title: 'Tập hợp số tự nhiên',
-    description: 'Nhận biết tập hợp số tự nhiên, cách viết, kí hiệu và thứ tự trong tập hợp số tự nhiên.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 1: Ôn tập các số đến 100 000',
+    description: 'Đọc, viết số, nhận biết các hàng (chục nghìn, nghìn, trăm, chục, đơn vị) và so sánh số.',
+    youtubeUrl: '',
     questions: [
       {
         id: 'q1-1-1',
-        text: 'Tập hợp số tự nhiên được kí hiệu là:',
-        options: ['$\\mathbb{N}$', '$\\mathbb{Z}$', '$\\mathbb{Q}$', '$\\mathbb{R}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Tập hợp số tự nhiên được kí hiệu là $\\mathbb{N}$.'
+        text: 'Số "Bảy mươi lăm nghìn không trăm linh tám" được viết là:',
+        options: ['75 080', '75 008', '75 800', '70 508'],
+        correctAnswerIndex: 1,
+        explanation: 'Bảy mươi lăm nghìn (75 000) không trăm linh tám (008), ghép lại là 75 008.'
       },
       {
         id: 'q1-1-2',
-        text: 'Số nào sau đây thuộc tập hợp số tự nhiên?',
-        options: ['-3', '1,5', '0', '-1'],
-        correctAnswerIndex: 2,
-        explanation: 'Số 0 là một số tự nhiên.'
+        text: 'Chữ số 4 trong số 84 521 thuộc hàng nào?',
+        options: ['Hàng nghìn', 'Hàng chục nghìn', 'Hàng trăm', 'Hàng chục'],
+        correctAnswerIndex: 0,
+        explanation: 'Từ phải sang trái: 1 là đơn vị, 2 là chục, 5 là trăm, 4 là nghìn. Vậy số 4 thuộc hàng nghìn.'
       },
       {
         id: 'q1-1-3',
-        text: 'Trong các số sau, số nào không thuộc tập hợp số tự nhiên?',
-        options: ['12', '0', '-5', '103'],
+        text: 'Số liền trước của số 100 000 là số nào?',
+        options: ['100 001', '99 990', '99 999', '90 000'],
         correctAnswerIndex: 2,
-        explanation: 'Số -5 là số nguyên âm nên không thuộc tập hợp số tự nhiên.'
+        explanation: 'Để tìm số liền trước, ta lấy số đó trừ đi 1. 100 000 - 1 = 99 999.'
       },
       {
         id: 'q1-1-4',
-        text: 'Số tự nhiên nhỏ nhất là:',
-        options: ['0', '1', '-1', 'Không có'],
+        text: 'Số gồm 6 chục nghìn, 3 trăm và 2 đơn vị viết là:',
+        options: ['60 302', '63 002', '60 320', '63 200'],
         correctAnswerIndex: 0,
-        explanation: 'Trong chương trình lớp 6, tập hợp số tự nhiên có chứa số 0 và 0 là số nhỏ nhất.'
+        explanation: 'Số này không có hàng nghìn và hàng chục (bằng 0). Vậy số đó là 60 302.'
       },
       {
         id: 'q1-1-5',
-        text: 'Cho tập hợp $A=\\{1;3;5;7\\}$. Khẳng định nào đúng?',
-        options: ['$3\\in A$', '$4\\in A$', '$7\\notin A$', '$1\\notin A$'],
+        text: 'Sắp xếp các số sau theo thứ tự từ bé đến lớn: 45 600, 45 060, 46 000, 45 006.',
+        options: [
+          '45 006, 45 060, 45 600, 46 000',
+          '46 000, 45 600, 45 060, 45 006',
+          '45 060, 45 006, 45 600, 46 000',
+          '45 006, 45 600, 45 060, 46 000'
+        ],
         correctAnswerIndex: 0,
-        explanation: 'Số 3 là phần tử của tập hợp $A$.'
-      },
-      {
-        id: 'q1-1-6',
-        text: 'Dãy số tự nhiên liên tiếp sau 8 là:',
-        options: ['7', '9', '10', '11'],
-        correctAnswerIndex: 1,
-        explanation: 'Số tự nhiên liền sau 8 là 9.'
-      },
-      {
-        id: 'q1-1-7',
-        text: 'Dãy số tự nhiên liên tiếp trước 20 là:',
-        options: ['18', '19', '21', '22'],
-        correctAnswerIndex: 1,
-        explanation: 'Số tự nhiên liền trước 20 là 19.'
-      },
-      {
-        id: 'q1-1-8',
-        text: 'Trong các cách viết sau, cách viết đúng là:',
-        options: ['$5 \\subset \\mathbb{N}$', '$5 \\in \\mathbb{N}$', '$\\mathbb{N} \\in 5$', '$0 \\notin \\mathbb{N}$'],
-        correctAnswerIndex: 1,
-        explanation: 'Số 5 là một phần tử của tập hợp số tự nhiên nên viết $5 \\in \\mathbb{N}$.'
-      },
-      {
-        id: 'q1-1-9',
-        text: 'Sắp xếp các số 12, 3, 25, 9 theo thứ tự tăng dần:',
-        options: ['3, 9, 12, 25', '25, 12, 9, 3', '3, 12, 9, 25', '9, 3, 12, 25'],
-        correctAnswerIndex: 0,
-        explanation: 'Thứ tự tăng dần là từ bé đến lớn: 3, 9, 12, 25.'
-      },
-      {
-        id: 'q1-1-10',
-        text: 'Số tự nhiên lớn nhất là:',
-        options: ['999', '1000000', 'Không có', '0'],
-        correctAnswerIndex: 2,
-        explanation: 'Tập hợp số tự nhiên kéo dài không giới hạn nên không có số tự nhiên lớn nhất.'
+        explanation: 'So sánh từng hàng từ trái sang phải, số bé nhất là 45 006, rồi đến 45 060, tiếp theo là 45 600 và lớn nhất là 46 000.'
       }
     ]
   },
   {
     id: 'c1-t2',
-    title: 'Các phép tính với số tự nhiên',
-    description: 'Thực hiện phép cộng, trừ, nhân, chia và vận dụng thứ tự thực hiện phép tính.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 2: Phép tính trong phạm vi 100 000',
+    description: 'Thực hiện các phép cộng, trừ, nhân, chia với các số có đến 5 chữ số.',
+    youtubeUrl: '',
     questions: [
       {
         id: 'q1-2-1',
-        text: 'Kết quả của phép tính $27+15$ là:',
-        options: ['42', '32', '52', '41'],
-        correctAnswerIndex: 0,
-        explanation: '$27+15=42$.'
+        text: 'Kết quả của phép tính 25 000 + 14 000 là:',
+        options: ['49 000', '39 000', '38 000', '29 000'],
+        correctAnswerIndex: 1,
+        explanation: 'Ta nhẩm: 25 nghìn + 14 nghìn = 39 nghìn (39 000).'
       },
       {
         id: 'q1-2-2',
-        text: 'Kết quả của phép tính $56-19$ là:',
-        options: ['47', '37', '27', '35'],
-        correctAnswerIndex: 1,
-        explanation: '$56-19=37$.'
+        text: 'Kết quả của phép tính 58 400 - 12 100 là:',
+        options: ['46 300', '46 500', '45 300', '47 300'],
+        correctAnswerIndex: 0,
+        explanation: 'Đặt tính thẳng cột và trừ từ phải sang trái: 58400 - 12100 = 46300.'
       },
       {
         id: 'q1-2-3',
-        text: 'Kết quả của phép tính $8\\times 7$ là:',
-        options: ['54', '56', '48', '64'],
-        correctAnswerIndex: 1,
-        explanation: '$8\\times 7=56$.'
+        text: 'Kết quả của phép tính 12 000 x 4 là:',
+        options: ['48 000', '24 000', '36 000', '60 000'],
+        correctAnswerIndex: 0,
+        explanation: 'Ta lấy 12 x 4 = 48, sau đó thêm 3 chữ số 0 ở cuối thành 48 000.'
       },
       {
         id: 'q1-2-4',
-        text: 'Kết quả của phép tính $81:9$ là:',
-        options: ['8', '7', '9', '10'],
+        text: 'Kết quả của phép tính 36 000 : 6 là:',
+        options: ['5 000', '7 000', '6 000', '8 000'],
         correctAnswerIndex: 2,
-        explanation: '$81:9=9$.'
+        explanation: 'Ta lấy 36 : 6 = 6, sau đó thêm 3 chữ số 0 còn lại thành 6 000.'
       },
       {
         id: 'q1-2-5',
-        text: 'Giá trị của biểu thức $12+3\\times 4$ là:',
-        options: ['60', '24', '20', '18'],
+        text: 'Tìm x biết: x - 15 000 = 20 000',
+        options: ['5 000', '35 000', '30 000', '45 000'],
         correctAnswerIndex: 1,
-        explanation: 'Thực hiện phép nhân trước: $3\\times 4=12$, sau đó $12+12=24$.'
-      },
-      {
-        id: 'q1-2-6',
-        text: 'Giá trị của biểu thức $(12+3)\\times 4$ là:',
-        options: ['48', '60', '36', '24'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong ngoặc trước: $12+3=15$, rồi $15\\times 4=60$.'
-      },
-      {
-        id: 'q1-2-7',
-        text: 'Số dư trong phép chia $29:6$ là:',
-        options: ['3', '4', '5', '2'],
-        correctAnswerIndex: 2,
-        explanation: '$29=6\\times 4+5$, nên số dư là 5.'
-      },
-      {
-        id: 'q1-2-8',
-        text: 'Trong phép chia có dư, số dư luôn:',
-        options: [
-          'Lớn hơn số chia',
-          'Nhỏ hơn số chia',
-          'Bằng số chia',
-          'Lớn hơn hoặc bằng số chia'
-        ],
-        correctAnswerIndex: 1,
-        explanation: 'Trong phép chia có dư, số dư luôn nhỏ hơn số chia.'
-      },
-      {
-        id: 'q1-2-9',
-        text: 'Giá trị của biểu thức $50-18:3$ là:',
-        options: ['44', '32', '16', '10'],
-        correctAnswerIndex: 0,
-        explanation: 'Thực hiện phép chia trước: $18:3=6$, rồi $50-6=44$.'
-      },
-      {
-        id: 'q1-2-10',
-        text: 'Tìm $x$ biết $x+25=63$.',
-        options: ['38', '88', '48', '36'],
-        correctAnswerIndex: 0,
-        explanation: 'Ta có $x=63-25=38$.'
+        explanation: 'Muốn tìm số bị trừ (x), ta lấy hiệu cộng với số trừ. x = 20 000 + 15 000 = 35 000.'
       }
     ]
   },
   {
     id: 'c1-t3',
-    title: 'Lũy thừa với số mũ tự nhiên',
-    description: 'Nhận biết lũy thừa, cơ số, số mũ và tính giá trị các lũy thừa đơn giản.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 3: Số chẵn, số lẻ',
+    description: 'Nhận biết đặc điểm của số chẵn (tận cùng là 0,2,4,6,8) và số lẻ (tận cùng là 1,3,5,7,9).',
+    youtubeUrl: '',
     questions: [
       {
         id: 'q1-3-1',
-        text: 'Biểu thức $2^3$ có giá trị là:',
-        options: ['5', '6', '8', '9'],
+        text: 'Số nào dưới đây là số chẵn?',
+        options: ['12 345', '18 091', '40 568', '99 999'],
         correctAnswerIndex: 2,
-        explanation: '$2^3=2\\times2\\times2=8$.'
+        explanation: 'Số chẵn là số có chữ số tận cùng là 0, 2, 4, 6 hoặc 8. Số 40 568 tận cùng là 8 nên là số chẵn.'
       },
       {
         id: 'q1-3-2',
-        text: 'Trong lũy thừa $5^2$, cơ số là:',
-        options: ['2', '5', '10', '25'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong $5^2$, cơ số là 5.'
+        text: 'Số nào dưới đây là số lẻ?',
+        options: ['10 000', '45 230', '78 112', '56 789'],
+        correctAnswerIndex: 3,
+        explanation: 'Số lẻ là số có chữ số tận cùng là 1, 3, 5, 7 hoặc 9. Số 56 789 tận cùng là 9 nên là số lẻ.'
       },
       {
         id: 'q1-3-3',
-        text: 'Trong lũy thừa $5^2$, số mũ là:',
-        options: ['2', '5', '10', '25'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong $5^2$, số mũ là 2.'
+        text: 'Số chẵn lớn nhất có ba chữ số là số nào?',
+        options: ['999', '998', '100', '990'],
+        correctAnswerIndex: 1,
+        explanation: 'Số lớn nhất có 3 chữ số là 999 (số lẻ). Lùi lại 1 đơn vị ta được số chẵn lớn nhất là 998.'
       },
       {
         id: 'q1-3-4',
-        text: 'Giá trị của $10^2$ là:',
-        options: ['20', '100', '1000', '12'],
+        text: 'Tổng của hai số lẻ luôn là:',
+        options: ['Số lẻ', 'Số chẵn', 'Số 0', 'Không xác định được'],
         correctAnswerIndex: 1,
-        explanation: '$10^2=10\\times10=100$.'
+        explanation: 'Ví dụ 3 + 5 = 8. Khi cộng hai số lẻ với nhau, ta luôn nhận được một số chẵn.'
       },
       {
         id: 'q1-3-5',
-        text: 'Giá trị của $3^3$ là:',
-        options: ['6', '9', '27', '12'],
+        text: 'Dãy số nào sau đây chỉ gồm các số chẵn?',
+        options: ['2, 4, 6, 7', '10, 20, 30, 45', '12, 14, 16, 18', '1, 3, 5, 7'],
         correctAnswerIndex: 2,
-        explanation: '$3^3=3\\times3\\times3=27$.'
-      },
-      {
-        id: 'q1-3-6',
-        text: 'Cách viết dưới dạng lũy thừa của $4\\times4\\times4$ là:',
-        options: ['$4^2$', '$4^3$', '$3^4$', '$12^4$'],
-        correctAnswerIndex: 1,
-        explanation: '$4\\times4\\times4=4^3$.'
-      },
-      {
-        id: 'q1-3-7',
-        text: 'Giá trị của biểu thức $2^2+3^2$ là:',
-        options: ['13', '25', '10', '12'],
-        correctAnswerIndex: 0,
-        explanation: '$2^2=4$, $3^2=9$, nên tổng là 13.'
-      },
-      {
-        id: 'q1-3-8',
-        text: 'Giá trị của biểu thức $2\\times3^2$ là:',
-        options: ['18', '12', '9', '6'],
-        correctAnswerIndex: 0,
-        explanation: 'Ta có $3^2=9$, nên $2\\times9=18$.'
-      },
-      {
-        id: 'q1-3-9',
-        text: 'Kết quả của $1^5$ là:',
-        options: ['1', '5', '0', 'Không xác định'],
-        correctAnswerIndex: 0,
-        explanation: 'Mọi lũy thừa của 1 đều bằng 1.'
-      },
-      {
-        id: 'q1-3-10',
-        text: 'Số nào sau đây bằng $2^4$?',
-        options: ['8', '12', '16', '14'],
-        correctAnswerIndex: 2,
-        explanation: '$2^4=2\\times2\\times2\\times2=16$.'
+        explanation: 'Dãy 12, 14, 16, 18 có tất cả các số tận cùng là 2, 4, 6, 8 nên đây là dãy số chẵn.'
       }
     ]
   },
   {
     id: 'c1-t4',
-    title: 'Thứ tự thực hiện phép tính',
-    description: 'Thực hiện đúng thứ tự phép tính có ngoặc, lũy thừa, nhân chia, cộng trừ.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 4: Biểu thức chứa chữ',
+    description: 'Làm quen với việc thay số vào chữ để tính giá trị của biểu thức.',
+    youtubeUrl: '',
     questions: [
       {
         id: 'q1-4-1',
-        text: 'Trong một biểu thức không có dấu ngoặc, ta thực hiện:',
-        options: [
-          'Cộng, trừ trước rồi nhân, chia sau',
-          'Nhân, chia trước rồi cộng, trừ sau',
-          'Từ trái sang phải với mọi phép tính',
-          'Lũy thừa sau cùng'
-        ],
+        text: 'Giá trị của biểu thức a + 15 với a = 10 là:',
+        options: ['20', '25', '30', '15'],
         correctAnswerIndex: 1,
-        explanation: 'Không có ngoặc thì thực hiện lũy thừa trước, rồi nhân chia, cuối cùng cộng trừ.'
+        explanation: 'Thay a = 10 vào biểu thức, ta có phép tính: 10 + 15 = 25.'
       },
       {
         id: 'q1-4-2',
-        text: 'Giá trị của $18-6\\times2$ là:',
-        options: ['24', '12', '6', '20'],
-        correctAnswerIndex: 2,
-        explanation: 'Thực hiện phép nhân trước: $6\\times2=12$, rồi $18-12=6$.'
+        text: 'Tính giá trị của biểu thức 50 - m với m = 18:',
+        options: ['32', '22', '42', '68'],
+        correctAnswerIndex: 0,
+        explanation: 'Thay m = 18 vào biểu thức, ta tính: 50 - 18 = 32.'
       },
       {
         id: 'q1-4-3',
-        text: 'Giá trị của $(18-6)\\times2$ là:',
-        options: ['12', '24', '30', '6'],
-        correctAnswerIndex: 1,
-        explanation: 'Trong ngoặc trước: $18-6=12$, sau đó $12\\times2=24$.'
+        text: 'Giá trị của biểu thức a x b với a = 5 và b = 8 là:',
+        options: ['13', '45', '40', '35'],
+        correctAnswerIndex: 2,
+        explanation: 'Thay a = 5 và b = 8, ta tính được: 5 x 8 = 40.'
       },
       {
         id: 'q1-4-4',
-        text: 'Giá trị của $2+3\\times4-5$ là:',
-        options: ['9', '14', '15', '5'],
-        correctAnswerIndex: 0,
-        explanation: '$3\\times4=12$, nên $2+12-5=9$.'
+        text: 'Chu vi hình vuông có công thức là P = a x 4 (với a là cạnh). Hãy tính P nếu a = 6 cm.',
+        options: ['10 cm', '24 cm', '20 cm', '16 cm'],
+        correctAnswerIndex: 1,
+        explanation: 'Thay a = 6 vào công thức, ta có chu vi P = 6 x 4 = 24 (cm).'
       },
       {
         id: 'q1-4-5',
-        text: 'Giá trị của $2^3+5$ là:',
-        options: ['11', '13', '15', '9'],
-        correctAnswerIndex: 1,
-        explanation: '$2^3=8$, nên $8+5=13$.'
-      },
-      {
-        id: 'q1-4-6',
-        text: 'Giá trị của $20:(3+2)$ là:',
-        options: ['4', '5', '10', '15'],
+        text: 'Tính giá trị biểu thức (m + n) x 2 với m = 10, n = 5.',
+        options: ['30', '20', '25', '15'],
         correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc trước: $3+2=5$, rồi $20:5=4$.'
-      },
-      {
-        id: 'q1-4-7',
-        text: 'Giá trị của $36:6\\times2$ là:',
-        options: ['3', '12', '1', '18'],
-        correctAnswerIndex: 1,
-        explanation: 'Chia và nhân cùng thứ tự ưu tiên nên tính từ trái sang phải: $36:6=6$, $6\\times2=12$.'
-      },
-      {
-        id: 'q1-4-8',
-        text: 'Giá trị của $5+(12-8)\\times3$ là:',
-        options: ['17', '9', '12', '15'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc: $12-8=4$, rồi $4\\times3=12$, cuối cùng $5+12=17$.'
-      },
-      {
-        id: 'q1-4-9',
-        text: 'Giá trị của $24-[3\\times(5-1)]$ là:',
-        options: ['9', '12', '15', '18'],
-        correctAnswerIndex: 1,
-        explanation: 'Ta có $(5-1)=4$, rồi $3\\times4=12$, cuối cùng $24-12=12$.'
-      },
-      {
-        id: 'q1-4-10',
-        text: 'Khi thực hiện phép tính, bước nào sau đây đúng?',
-        options: [
-          'Tính trong ngoặc trước',
-          'Cộng trước rồi nhân',
-          'Chia trước ngoặc',
-          'Cứ tính từ phải sang trái'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Trong biểu thức có ngoặc thì luôn ưu tiên tính trong ngoặc trước.'
+        explanation: 'Thay số vào ta có (10 + 5) x 2. Tính trong ngoặc trước: 15 x 2 = 30.'
       }
     ]
   },
   {
     id: 'c1-t5',
-    title: 'Ôn tập chương Số tự nhiên',
-    description: 'Củng cố kiến thức về tập hợp số tự nhiên, phép tính, lũy thừa và thứ tự thực hiện phép tính.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=nZtFlrwCbs4&t=2504s',
+    title: 'Bài 5: Giải bài toán có ba bước tính',
+    description: 'Thực hành tư duy giải quyết vấn đề qua nhiều bước tính toán.',
+    youtubeUrl: '',
     questions: [
       {
         id: 'q1-5-1',
-        text: 'Số nào sau đây là số tự nhiên?',
-        options: ['-8', '0', '1,2', '-1'],
-        correctAnswerIndex: 1,
-        explanation: 'Số 0 thuộc tập hợp số tự nhiên.'
-      },
-      {
-        id: 'q1-5-2',
-        text: 'Kết quả của phép tính $45+17$ là:',
-        options: ['62', '52', '72', '63'],
-        correctAnswerIndex: 0,
-        explanation: '$45+17=62$.'
-      },
-      {
-        id: 'q1-5-3',
-        text: 'Kết quả của phép tính $90-38$ là:',
-        options: ['52', '58', '48', '62'],
-        correctAnswerIndex: 0,
-        explanation: '$90-38=52$.'
-      },
-      {
-        id: 'q1-5-4',
-        text: 'Giá trị của $4^2$ là:',
-        options: ['8', '12', '16', '20'],
+        text: 'Mẹ mua 2 hộp bánh, mỗi hộp 50 000 đồng và 1 chai sữa giá 20 000 đồng. Mẹ đưa cô bán hàng 200 000 đồng. Hỏi cô bán hàng phải trả lại mẹ bao nhiêu tiền?',
+        options: ['120 000 đồng', '130 000 đồng', '80 000 đồng', '100 000 đồng'],
         correctAnswerIndex: 2,
-        explanation: '$4^2=16$.'
-      },
-      {
-        id: 'q1-5-5',
-        text: 'Giá trị của biểu thức $6+2\\times5$ là:',
-        options: ['40', '16', '20', '50'],
-        correctAnswerIndex: 1,
-        explanation: '$2\\times5=10$, nên $6+10=16$.'
-      },
-      {
-        id: 'q1-5-6',
-        text: 'Giá trị của biểu thức $(6+2)\\times5$ là:',
-        options: ['40', '16', '35', '30'],
-        correctAnswerIndex: 0,
-        explanation: 'Trong ngoặc trước: $6+2=8$, rồi $8\\times5=40$.'
-      },
-      {
-        id: 'q1-5-7',
-        text: 'Số dư của phép chia $17:5$ là:',
-        options: ['1', '2', '3', '4'],
-        correctAnswerIndex: 1,
-        explanation: '$17=5\\times3+2$, nên số dư là 2.'
-      },
-      {
-        id: 'q1-5-8',
-        text: 'Tập hợp nào sau đây chỉ gồm các số tự nhiên?',
-        options: ['$\\{0;1;2;3\\}$', '$\\{-1;0;1\\}$', '$\\{1;2;3,5\\}$', '$\\{-2;-1;0\\}$'],
-        correctAnswerIndex: 0,
-        explanation: 'Chỉ tập hợp $\\{0;1;2;3\\}$ gồm toàn số tự nhiên.'
-      },
-      {
-        id: 'q1-5-9',
-        text: 'Biểu thức nào sau đây có giá trị bằng 25?',
-        options: ['$5^2$', '$2^5$', '$3^2$', '$4^2$'],
-        correctAnswerIndex: 0,
-        explanation: '$5^2=25$.'
-      },
-      {
-        id: 'q1-5-10',
-        text: 'Nội dung trọng tâm của chương này là:',
-        options: [
-          'Số tự nhiên và các phép tính cơ bản',
-          'Phân số và số thập phân',
-          'Xác suất thực nghiệm',
-          'Đường tròn và hình hộp chữ nhật'
-        ],
-        correctAnswerIndex: 0,
-        explanation: 'Chương này tập trung vào số tự nhiên, phép tính, lũy thừa và thứ tự thực hiện phép tính.'
+        explanation: 'Bước 1: Tiền 2 hộp bánh là 50000 x 2 = 100000. Bước 2: Tổng tiền mẹ mua là 100000 + 20000 = 120000. Bước 3: Tiền thừa cô trả lại là 200000 - 120000 = 80 000 đồng.'
       }
+      // Bạn có thể thêm các bài toán đố tương tự ở đây
     ]
   }
 ];
